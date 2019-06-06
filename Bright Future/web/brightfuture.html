@@ -1,0 +1,2164 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <title>Bright Future</title>
+    <!-- Meta tag Keywords -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="Informing Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+
+<style>
+html,
+body {
+    margin: 0;
+    font-size: 100%;
+    background: #fff;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body a {
+    text-decoration: none;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+cursor: pointer !important;
+}
+.btn,
+button {
+    cursor: pointer !important;
+}
+
+
+a:hover {
+    text-decoration: none;
+    opacity: 0.8;
+}
+
+input[type="button"],
+input[type="submit"],
+input[type="text"],
+input[type="email"],
+input[type="search"] {
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    font-size: 0.9em;
+    color: #2e2e2e;
+    line-height: 1.9em;
+    letter-spacing: 1px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/*-- header --*/
+
+/* header */
+
+/* CSS Document */
+
+header {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+}
+
+.toggle,
+[id^=drop] {
+    display: none;
+}
+
+/* Giving a background-color to the nav container. */
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+
+#logo a {
+    float: left;
+    display: initial;
+    margin: 0;
+    letter-spacing: 1px;
+    color: #fff;
+    padding: 0;
+    font-size: 0.8em;
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+
+/* Since we'll have the "ul li" "float:left"
+ * we need to add a clear after the container. */
+
+nav:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Removing padding, margin and "list-style" from the "ul",
+ * and adding "position:reltive" */
+
+nav ul {
+    float: right;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+}
+
+/* Positioning the navigation items inline */
+
+nav ul li {
+    margin: 0px 0.3em;
+    display: inline-block;
+    float: left;
+}
+
+/* Styling the links */
+
+nav ul.menu li a {
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    padding-left: 0;
+    padding-right: 0;
+    padding: 0.5em 1.5em;
+    background: transparent;
+    font-weight: 400;
+}
+
+
+nav ul li ul li:hover {
+    background: transparent;
+
+}
+
+
+/* Background color change on Hover */
+
+.menu li.active a {
+    color: #03f4eb;
+}
+
+/* Hide Dropdowns by Default
+ * and giving it a position of absolute */
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    /* has to be the same number as the "line-height" of "nav a" */
+    top: 30px;
+    background: #fff;
+    padding: 10px;
+}
+
+/* Display Dropdowns on Hover */
+
+nav ul li:hover > ul {
+    display: inherit;
+}
+
+/* Fisrt Tier Dropdown */
+
+nav ul ul li {
+    width: 170px;
+    float: none;
+    display: list-item;
+    position: relative;
+    margin: 0;
+}
+
+nav ul.menu li ul li a {
+    color: #333;
+    padding: 5px 10px;
+    display: block;
+}
+
+nav ul.menu li ul li a:hover {
+    color: #03f4eb;
+    background:transparent;
+}
+
+/* Second, Third and more Tiers 
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+ * by the amount of the width of the first tier.
+*/
+
+nav ul ul ul li {
+    position: relative;
+    top: -60px;
+    /* has to be the same number as the "width" of "nav ul ul li" */
+    left: 170px;
+}
+
+
+/* Change ' +' in order to change the Dropdown symbol */
+
+li > a:only-child:after {
+    content: '';
+}
+
+
+/* Media Queries
+--------------------------------------------- */
+
+@media all and (max-width:992px) {
+
+    #logo {
+        display: block;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    nav a {
+        color: #333;
+    }
+
+    /* Hide the navigation menu by default */
+    /* Also hide the  */
+    .toggle + a,
+    .menu {
+        display: none;
+    }
+
+    /* Stylinf the toggle lable */
+    .toggle {
+        display: block;
+        padding: 6px 15px;
+        font-size: 16px;
+        text-decoration: none;
+        border: none;
+        float: right;
+        margin-right: 0em;
+        background-color: #fff;
+        color: #1b1d1d;
+        text-transform: capitalize;
+        font-weight: 400;
+        cursor: pointer !important;
+    }
+
+    .menu .toggle {
+        float: none;
+        text-align: center;
+        margin: auto;
+        width: 30%;
+        padding: 5px;
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+
+    .toggle:hover {
+        color: #333;
+        background-color: #fff;
+    }
+
+    /* Display Dropdown when clicked on Parent Lable */
+    [id^=drop]:checked + ul {
+        display: block;
+        background: #fff;
+        padding: 15px 0;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    /* Change menu item's width to 100% */
+    nav ul li {
+        display: block;
+        width: 100%;
+        padding: 5px 0;
+    }
+
+    nav ul ul .toggle,
+    nav ul ul a {
+        padding: 0 40px;
+    }
+
+    nav ul.menu li a {
+        color: #312f2f;
+    }
+
+    nav a:hover,
+    nav ul ul ul a {
+        background-color: transparent;
+    }
+
+    nav ul li ul li .toggle,
+    nav ul ul a,
+    nav ul ul ul a {
+        padding: 14px 20px;
+        color: #312f2f;
+        font-size: 15px;
+    }
+
+
+    nav ul li ul li .toggle,
+    nav ul ul a {
+        background-color: #fff;
+    }
+
+    nav ul ul li a {
+        font-size: 15px;
+    }
+
+    /* Hide Dropdowns by Default */
+    nav ul ul {
+        float: none;
+        position: static;
+        color: #ffffff;
+        /* has to be the same number as the "line-height" of "nav a" */
+    }
+
+    /* Hide menus on hover */
+    nav ul ul li:hover > ul,
+    nav ul li:hover > ul {
+        display: none;
+    }
+
+    /* Fisrt Tier Dropdown */
+    nav ul ul li {
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0;
+    }
+
+    nav ul ul ul li {
+        position: static;
+        /* has to be the same number as the "width" of "nav ul ul li" */
+    }
+
+    .login-icon {
+        text-align: right;
+    }
+
+    .login-icon span {
+        margin-right: 1em;
+    }
+}
+
+@media all and (max-width:568px) {
+    [id^=drop]:checked + ul {
+        display: block;
+        background: #fff;
+        padding: 15px 0;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .menu .toggle {
+        float: none;
+        text-align: center;
+        margin: auto;
+        width: 70%;
+    }
+
+}
+
+.login-icon p {
+    color: #fff;
+}
+
+.login-icon span {
+
+    color: #fcd000;
+}
+
+/*-- //header --*/
+.order-info {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.13);
+}
+/*-- //header --*/
+
+.main-content {
+    background: url(../images/banner1.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    position: relative;
+    min-height: 50em;
+}
+
+.layer {
+    min-height: 50em;
+    background: rgba(0, 0, 0, 0.52);
+}
+
+.banner-info-w3layouts {
+    padding-top: 23em;
+    text-align: center;
+}
+
+.banner-info-w3layouts h3 {
+    font-size: 2.5em;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.37);
+    text-transform: capitalize;
+    letter-spacing: 5px;
+}
+
+.banner-info-w3layouts h6 {
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: block;
+    color: #fcd000;
+    font-family: 'Pacifico', cursive;
+}
+
+.read-more {
+    margin-top: 1.2em;
+}
+
+a.read-more {
+    background: #03f4eb;
+    color: #fff;
+    padding: 0.8em 3em;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
+    font-size: 13px;
+    display: inline-block;
+    border: transparent;
+    transition: all 500ms ease;
+    text-align: justify;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+
+.middle ul.social li {
+    margin: 0 0.8em;
+    display: inline-block;
+}
+
+.middle ul.social li a {
+    font-size: 13px;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+
+.middle-right h6 {
+    font-size: 1em;
+    color:#03f4eb;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/*-- //banner --*/
+
+/*-- //heading --*/
+
+#about {
+    background: #fff;
+}
+
+.content-left-bottom h4 {
+    font-size: 1.7em;
+    letter-spacing: 6px;
+    line-height: 1.5em;
+    margin: 1em 0;
+    color: #272525;
+    font-weight: 700;
+}
+
+.content-left-bottom {
+    margin-top: 5em;
+}
+
+/*--*/
+
+.ab-info {
+    text-align: center;
+}
+
+.ab-info h4 {
+    font-size: 1em;
+    color: #ffc80a;
+    margin: 2em 0 0em 0;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.list-group-image {
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    transition: 0.5s all;
+    background: rgb(236, 237, 239);
+    padding: 8px;
+}
+
+.ab-info p {
+    text-align: center;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Oswald', sans-serif;
+}
+
+.ab-content img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.15);
+    transition: all 500ms ease;
+    width: 68%;
+}
+
+.ab-content-inner {
+    padding: 2em 1em;
+}
+
+.ab-info h5 {
+    font-size: 1.1em;
+    letter-spacing: 0px;
+    font-weight: 700;
+    color: #555;
+    line-height: 1.7em;
+}
+
+/*--*/
+
+/*-- popup --*/
+
+.pop-overlay {
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 0ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 999;
+}
+
+.pop-overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup {
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    margin: 8em auto;
+    padding: 3em 1em;
+}
+
+.popup p {
+    font-size: 15px;
+    color: #666;
+    letter-spacing: .5px;
+    line-height: 30px;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #fff;
+
+}
+
+.popup .close {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.popup .close:hover {
+    color: #30c39e;
+}
+
+
+/*-- //popup --*/
+
+/*-- //banner --*/
+
+.services {
+    background: #c20d00;
+}
+
+h3.tittle,
+h3.tittle.two {
+    font-size: 2.3em;
+    font-weight: 400;
+    color: #33353a;
+    text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
+    text-transform: capitalize;
+}
+
+h3.tittle.two {
+    color: #fff;
+}
+
+.sub-tittle {
+    font-size: 0.35em;
+    color: #ffa801;
+    letter-spacing: 1px;
+    display: block;
+    text-transform: uppercase;
+
+}
+
+.content-left span {
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #03A9F4;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+span.title {
+    color: #fcd000;
+    text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    display: block;
+    font-family: 'Pacifico', cursive;
+}
+
+.content-right-bottom p {
+    line-height: 2em;
+}
+
+/*-- //about -*/
+/*-- features --*/
+
+.heading-grid {
+    margin-bottom: 6em;
+}
+.banner-bottom span.fa {
+    font-size: 30px;
+    color: #03f4eb;
+}
+.inner-info h4 {
+    text-transform: capitalize;
+    font-size: 19px;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+/*-- //features --*/
+/*-- team --*/
+.team-grids {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.team-grids h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.team-grids h6 {
+    font-size: 17px;
+    color: #ccc;
+    letter-spacing: 1px;
+    font-family: initial;
+    font-style: italic;
+}
+
+.social-icons-section a {
+    color: #eee;
+    padding: 10px 0;
+    display: block;
+    font-size: 15px;
+}
+
+
+.team-info {
+    position: absolute;
+    bottom: -227px;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2em 0;
+    -webkit-transition: .5s all;
+    transition: .5s all;
+    -moz-transition: .5s all;
+    width: 82%;
+    text-align: center;
+}
+
+.team-grids:hover div.team-info {
+    bottom: 0;
+}
+
+.social-icons-section,
+.team-grids h6 {
+    margin-top: 0.5em;
+}
+
+.caption {
+    padding: 0px;
+}
+
+.team-info .social-icons-section a {
+    margin: 0em .5em;
+}
+.social-icons-section {
+    background: #333;
+    padding: 10px 0px;
+    margin-top: 0;
+    display: inline-block;
+    width: 18%;
+    float: left;
+}
+.team-grids img {
+    width: 82%;
+    float: left;
+}
+
+/* team responsive */
+@media(max-width:1080px) {
+    .team-grids h4 {
+        font-size: 1em;
+    }
+
+    .about_grids h3 {
+        font-size: 22px;
+    }
+
+    .about-in .card {
+        padding: 1.5em .5em;
+    }
+}
+
+@media(max-width:1024px) 
+{
+   
+}
+
+@media(max-width:991px)
+ {
+    
+}
+
+@media(max-width:736px) 
+{
+    
+}
+
+@media(max-width:480px) 
+{
+    
+}
+
+@media(max-width:440px) {
+   
+}
+
+@media(max-width:414px) {
+    
+}
+
+@media(max-width:384px) {
+    
+}
+
+@media(max-width:320px) {
+    
+}
+
+/* //team responsive */
+/* //team */
+
+.about-text-grid a {
+    background: #03f4eb;
+    padding: 15px 30px;
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+/*-- stats --*/
+.stats h3.heading {
+    color: #f8f9fa;
+}
+
+.stats p {
+    color: #ccc;
+}
+
+.stats-left h4 span {
+    font-size: 50px;
+    font-weight: 600;
+    color: #0be881;
+}
+
+.stats-left h4 {
+    background: rgb(248, 249, 250);
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    line-height: 65px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color: #fff;
+}
+
+.stats-right h4 {
+    font-size: 2.4em;
+    font-weight: 700;
+    margin: 15px 0;
+    color: #fff;
+}
+
+
+.stats-right span.fa {
+    color: #212529;
+    font-size: 20px;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.stats {
+    background: url(../images/banner3.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    position: relative;
+}
+
+.brands a span.fa {
+    font-size: 3em;
+    color: #333;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    -o-transition: 0.5s all;
+}
+
+/*-- //stats --*/
+
+/*-- middle-section --*/
+
+.section-middle {
+    background: #111;
+}
+.section-middle .about-text-grid1 h3 {
+    color: #eee;
+    max-width: 430px;
+}
+.section-middle h4 {
+    text-transform: uppercase;
+    color: #eee;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+.section-middle h4 span {
+    width: 60px;
+    height: 2px;
+    background: #fff;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 15px;
+}
+.about-text-grid1 a {
+    background: none;
+    padding: 13px 30px;
+    display: inline-block;
+    color: #fff;
+    border: 2px solid #fff;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+/*-- //middle-section --*/
+.about-right p {
+    color: #fff;
+}
+.about-text-grid h3, .about-text-grid1 h3 {
+    display: inline-block;
+    font-size: 2.5em;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+section#gallery {
+    position: relative;
+}
+
+.gallery-wrap {
+    margin: 0 auto;
+}
+
+.gal-img {
+    padding: 10px;
+}
+
+.gal-img img {
+    border-radius: 0;
+    -moz-transition: 0.5s all;
+    transition: 0.5s all;
+    margin-bottom: 1.1em;
+}
+
+.gal-img:hover.gal-img img {
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, .3);
+}
+
+.gal-img a span {
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #1e272e;
+    text-shadow: 0 0 0.5px rgba(58, 57, 57, 0.25);
+    background: #ffffff;
+    display: block;
+    padding: 1em;
+    margin-bottom: 15px;
+}
+/* testimonials */
+.testi {
+        background: url(../images/banner3.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    position: relative;;
+}
+
+h6.b-w3ltxt {
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+h6.b-w3ltxt span {
+    font-weight: normal;
+    color: #03f4eb;
+    text-transform: capitalize;
+    font-size: 16px;
+}
+.testi-cgrid p {
+    line-height: 1.8em;
+}
+.testi-cgrid p span.fa {
+    color: #03f4eb;
+}
+
+.testi-icon img{
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -o-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border: 5px solid #f6f6f6;
+    background: #eee;
+}
+
+.testi-icon span.fa {
+    font-size: 1.4em;
+}
+.testi-cgrid {
+    background: #fff;
+    padding: 2em 1em;
+}
+.border-right-grid{
+     border-right: 8px solid #000000;
+    
+}
+.border-left-grid{
+     border-left: 8px solid #000000;
+    
+}
+/* //testimonials */
+/*-- contact --*/
+.contact-title {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.contact_grid_right input[type="text"], .contact_grid_right input[type="email"], .contact_grid_right textarea {
+    outline: none;
+    padding: 13px 15px;
+    font-size: 16px;
+    color: #777;
+    width: 100%;
+    letter-spacing: 1px;
+    border: none;
+    background: #fff;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+.contact_grid_right textarea {
+    min-height: 120px;
+    resize: none;
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+    background: none;
+    background: #fff;
+}
+.contact-style-w3ls p a{
+    font-size: 17px;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #707579;
+}
+.contact-style-w3ls p span.fa {
+    color: #03f4eb;
+    width: 25px;
+}
+.contact_left_grid button.btn {
+    background: #03f4eb;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 13px;
+    display: inline-block;
+    border-radius: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+.contact{
+    background: #f6f6f6;
+}
+/*-- //contact --*/
+/* footer */
+
+.footer-content {
+    background: url(../images/banner2.jpg) center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    background-size: cover;
+    min-height: 28em;
+}
+
+hr {
+    border-top: 1px solid rgba(251, 247, 247, 0.1);
+}
+
+.layer.footer-1 {
+    min-height: 28em;
+    background: rgba(0, 0, 0, 0.82);
+}
+
+.footer-top-inner-w3ls {
+    padding: 5em 2em 3em 2em;
+}
+
+.footer-content h2 a {
+    text-transform: capitalize;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: #03f4eb;
+}
+
+/* footer grids */
+
+ul.list-info-w3pvt {
+    list-style: none;
+}
+
+h4.footer-title {
+    color: #777;
+    text-transform: capitalize;
+}
+
+.footerv3-top p {
+    font-size: 1em;
+    color: #a3b1bf;
+    margin: 1em 0;
+    line-height: 1.5em;
+}
+
+.footer p a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.last-w3ls-contact p {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 0.85em;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.footer-top p {
+    padding-right: 6em;
+    color: #fff;
+}
+
+.last-w3ls-contact p a:hover {
+    color: #15b915;
+}
+
+.list-info-w3pvt li a {
+    color: #fff;
+    font-size: 0.85em;
+    letter-spacing: 1px;
+}
+
+.list-info-w3pvt li a:hover {
+    opacity: 0.8;
+}
+
+h3.w3pvt_title {
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.last-w3ls-contact a {
+    color: #fff;
+}
+
+.w3ls-icons li {
+    display: inline-block;
+    margin: 0 1em;
+}
+
+.w3ls-icons li a span {
+    color: #fff;
+}
+
+.w3ls-icons li a span:hover {
+    color: #ffc80a;
+}
+
+/* //footer */
+.footer-text input[type="email"] {
+    outline: none;
+    padding: 12px 15px;
+    color: #fff;
+    font-size: 13px;
+    width: 85%;
+    border: none;
+    background: none;
+    letter-spacing: 1px;
+}
+
+.newsletter {
+    position: relative;
+    margin-top: 2em;
+}
+
+button.btn1 {
+    color: #808080;
+    border: none;
+    padding: 10px 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+    transition: 0.5s all;
+    float: right;
+    width: 15%;
+}
+
+.footer-text form {
+    border: 1px solid #808080;
+    width: 100%;
+    margin-top: 20px;
+}
+.footer-text p {
+    color: #fff;
+}
+/* copyright */
+
+p.copy-right-grids {
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+p.copy-right-grids a {
+    color: #fff;
+}
+
+/* //copyright */
+
+a.move-top {
+    text-align: center;
+}
+
+a.move-top span {
+    color: #fff;
+    width: 36px;
+    height: 36px;
+    border: transparent;
+    line-height: 2em;
+    background: #626c733b;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -o-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+}
+
+/*-- //footer --*/
+
+/*-- Responsive design --*/
+
+@media screen and (max-width: 1440px) {
+
+    .main-content,
+    .layer {
+        min-height: 45em;
+    }
+
+    .banner-info-w3layouts {
+        padding-top: 18em;
+
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .test-info {
+        padding: 5em 2em 0 2em;
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+
+    .main-content,
+    .layer {
+        min-height: 40em;
+    }
+
+    .banner-info-w3layouts {
+        padding-top: 17em;
+    }
+
+    .content-left-bottom {
+        margin-top: 3em;
+    }
+
+    .ab-info h4 {
+        font-size: 0.9em;
+        margin: 2em 0 0em 0;
+    }
+
+    .tab-wrap {
+        padding: 3em 1em;
+    }
+
+    .test-info {
+        padding: 5em 2em 0 2em;
+        width: 70%;
+    }
+
+    .footer-top p {
+        padding-right: 1em;
+    }
+
+    h3.tittle,
+    h3.tittle.two {
+        font-size: 2.2em;
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .popup {
+        width: 50%;
+    }
+
+    .content-left-bottom h4 {
+        font-size: 1.5em;
+        letter-spacing: 2px;
+    }
+
+    .content-left-bottom {
+        margin-top: 2em;
+    }
+
+    .ab-content {
+        width: 50%;
+        float: left;
+    }
+
+    .adress-info:nth-child(2) {
+        margin: 1.5em 0;
+    }
+
+    .tab-main {
+        padding: 16px 0;
+        width: 90%;
+    }
+
+    .test-info {
+        padding: 5em 2em 0 2em;
+        width: 100%;
+    }
+
+    .banner-info-w3layouts {
+        padding-top: 15em;
+    }
+
+    .main-content,
+    .layer {
+        min-height: 38em;
+    }
+
+    h3.tittle,
+    h3.tittle.two {
+        font-size: 2em;
+    }
+    .about-text-grid h3, .about-text-grid1 h3 {
+    font-size: 2em;
+}
+.about-text-grid {
+    margin-top: 1.5em;
+}
+}
+
+
+@media screen and (max-width:768px) {
+    .tab-wrap {
+        padding: 2em 0em;
+    }
+
+    form#contactform1 {
+        margin-bottom: 3em;
+        padding: 0 0 3em 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .tab-wrap {
+        padding: 2em 0em;
+        margin-top: 1em;
+    }
+
+    .gal-img {
+        padding: 10px;
+        float: left;
+        width: 50%;
+    }
+
+    .footer-top-inner-w3ls {
+        padding: 2em 2em 3em 2em;
+    }
+
+    .adress-info span {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+
+    .middle,
+    .middle-right,
+    .order-left-content,
+    .order-right-content {
+        text-align: center !important;
+    }
+
+    .tab-main label {
+        padding: 15px 50px;
+    }
+
+    .test-info {
+        padding: 1em 2em 0 0em;
+        width: 100%;
+    }
+
+    .footer-content,
+    .layer.footer,
+    #testimonials {
+        min-height: 20em;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .banner-info-w3layouts {
+        padding-top: 13em;
+    }
+
+    .main-content,
+    .layer {
+        min-height: 34em;
+    }
+
+    .content-left-bottom {
+        margin-top: 0em;
+    }
+}
+
+@media screen and (max-width: 667px) {
+
+    h3.tittle,
+    h3.tittle.two {
+        font-size: 1.8em;
+    }
+
+    .tab-main label {
+        padding: 10px 30px;
+    }
+
+    h3.tittle.order {
+        font-size: 2em;
+    }
+
+    .footer-top-inner-w3ls {
+        padding: 1em 0em 1em 0em;
+    }
+
+    h3.w3pvt_title {
+        font-size: 1em;
+    }
+
+    .read-more {
+        margin-top: 1em;
+    }
+
+    .tab-main section {
+        padding: 2em 0 2em 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .banner-info-w3layouts {
+        padding-top: 13em;
+    }
+
+    .main-content,
+    .layer {
+        min-height: 30em;
+    }
+}
+
+
+@media screen and (max-width:568px) {
+    .ab-content {
+        width: 100%;
+        float: left;
+    }
+
+    .popup {
+        width: 80%;
+    }
+    .border-right-grid{
+     border-left: 8px solid #000000;
+}
+.border-left-grid{
+      border-right: 8px solid #000000;
+}
+.order-info {
+    padding: 0.8em 0;
+}
+}
+
+@media screen and (max-width: 480px) {
+    .tab-main label {
+        padding: 10px 20px;
+        font-size: 0.8em;
+    }
+
+    form#contactform1 {
+        margin-bottom: 2em;
+        padding: 0 0 2em 0;
+    }
+    .contact-title {
+    font-size: 24px;
+}
+.about-text-grid h3, .about-text-grid1 h3 {
+    font-size: 1.7em;
+}
+}
+
+@media screen and (max-width: 414px) {
+    .content-left-bottom h4 {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width: 384px) {
+
+    h3.tittle,
+    h3.tittle.two {
+        font-size: 1.6em;
+    }
+
+    .main-content,
+    .layer {
+        min-height: 25em;
+    }
+
+    .banner-info-w3layouts {
+        padding-top: 12em;
+    }
+.banner-info-w3layouts h3 {
+    font-size: 2em;
+    letter-spacing: 3px;
+}
+
+    .content-left-bottom h4 {
+        font-size: 1.2em;
+    }
+
+    .test-info {
+        padding: 0em 0em 0 0em;
+        width: 100%;
+    }
+    .heading-grid {
+    margin-bottom: 0em;
+}
+}
+
+@media screen and (max-width:375px) {
+    .tab-main {
+        padding: 16px 0;
+        width: 100%;
+    }
+}
+@media screen and (max-width:320px) {
+.about-text-grid h3, .about-text-grid1 h3 {
+    font-size: 1.5em;
+}
+}
+/*-- //Responsive design --*/
+</style>
+
+
+
+    <script>
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- //Meta tag Keywords -->
+    <!-- Custom-Files -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Bootstrap-Core-CSS -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+    <!-- Style-CSS -->
+    <!-- font-awesome-icons -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <!-- /Fonts -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,600,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
+    <!-- //Fonts -->
+</head>
+
+<body>
+    <!-- mian-content -->
+    <div class="main-content" id="home">
+        <div class="layer">
+            <!-- header -->
+            <header>
+                <div class="container-fluid px-lg-5">
+                    <div class="row order-info">
+                    <div class="middle mt-sm-3 col-sm-6 text-left">
+                        <ul class="social mb-3">
+                            <li><a href="https://www.facebook.com/?stype=lo&jlou=Afd8IzVrJysjQjF3toZgg6HwQ7RTmEq3ctD20BFJUodIBe8sqLfe6lHnM1GW6yJzl4UzFs9lAciq8w5RnOnItw7W4GFXAZhqXQs115bV0p68bw&smuh=20696&lh=Ac_PRrId4IzmWBal"><span class="fa fa-facebook icon_facebook"></span></a></li>
+                            <li><a href="https://twitter.com/"><span class="fa fa-twitter icon_twitter"></span></a></li>
+                            <li><a href="https://www.google.com/"><span class="fa fa-google-plus icon_google-plus"></span></a></li>
+                            <li><a href="https://in.linkedin.com/"><span class="fa fa-linkedin icon_linkedin"></span></a></li>
+                            <li><a href="https://dribbble.com/"><span class="fa fa-dribbble icon_dribbble"></span></a></li>
+                        </ul>
+
+                    </div>
+                    <div class="middle-right mt-sm-3 col-sm-6 text-right">
+                        <h6><span class="fa fa-phone"></span> Enquiry : 9456427</h6>
+                    </div>
+                </div>
+                    <!-- nav -->
+                    <nav class="pt-4 d-lg-flex">
+                        <div id="logo">
+                            <h1> <a href="#">Bright  Future</a></h1>
+                        </div>
+                        <label for="drop" class="toggle">Menu</label>
+                        <input type="checkbox" id="drop" />
+                        <ul class="menu mt-2 ml-auto">
+                            <li class="active"><a href="index.html">Home</a></li>
+                            <li><a href="#about" class="scroll">About</a></li>
+                            <li>
+                                <!-- First Tier Drop Down -->
+                                <label for="drop-2" class="toggle">Dropdown <span class="fa fa-angle-down" aria-hidden="true"></span> </label>
+                                <a href="#">Sections<span class="fa fa-angle-down" aria-hidden="true"></span></a>
+                                <input type="checkbox" id="drop-2" />
+                                <ul class="inner-ul">
+                                    <li><a class="scroll" href="#gallery">Gallery</a></li>
+                                    <li><a href="#services" class="scroll">Services</a></li>
+                                    <li><a href="#stats" class="scroll">Stats</a></li>
+                                    <li><a href="#team" class="scroll">Team</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#testimonials" class="scroll">Testimonials</a></li>
+                            <li><a href="#contact" class="scroll">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <!-- //nav -->
+                </div>
+            </header>
+            <!-- //header -->
+            <div class="container">
+                <!-- /banner -->
+                <div class="banner-info-w3layouts text-center">
+                    <h3>Start Learning For Bright Future</h3>
+                    <div class="read-more">
+                        <a href="#about" class="read-more scroll">Read More </a> </div>
+                </div>
+                
+            </div>
+            <!-- //banner -->
+        </div>
+    </div>
+    <!--// mian-content -->
+<!-- about-->
+<section class="wthree-row py-5" id="about">
+    <div class="container pt-lg-5">
+        <div class="row about-main">
+            <div class="col-lg-6 about-right">
+                <img src="images/g1.jpg" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-6 about-text-grid text-left">
+                <div class="title-desc">
+                    <h3 class="main-title-w3pvt text-capitalize"> About Bright Future</h3>
+                </div>
+                <p class="my-sm-4 mt-2 mb-4">Bright Future empowers youth to make informed decisions about their career and thus enables them to transform their passion into gainful employment through life skills development, career development, mentoring support, internships and placement opportunities.Bright Future also builds capacities of key stakeholders like parents and schools who play an instrumental role in creating a conducive environment for enabling youth to take informed decisions independently pertaining to their career and life.</p>
+                <a href="#bottom"> Read more</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //about -->
+
+<!-- features -->
+<section class="banner-bottom py-5" id="services">
+    <div class="container py-sm-4">
+        <div class="heading-grid text-center">
+            <h3 class="tittle text-center heading mb-5">Features</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                <div class="row inner-info">
+                    <div class="col-2">
+                        <span class="fa fa-crosshairs"></span>
+                    </div>
+                    <div class="col-10">
+                        <h4 class="mt-md-0 my-2">School Program</h4>
+                        <p class="">The School Programme focuses on creating a conducive environment in school by building capacities of students in grades VIII to X and key stakeholders like parents and teachers for enabling students to take informed decisions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="row inner-info">
+                    <div class="col-2">
+                        <span class="fa fa-laptop"></span>
+                    </div>
+                    <div class="col-10">
+                        <h4 class="mt-md-0 my-2">Livelihood Program</h4>
+                        <p class="">An accessible center in the community where a 3 months Livelihood programme is run for youth, who are known as aspirants, in the community in the age group of 18–25 years which develops them through Life Skills training, English and IT skills..</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                <div class="row inner-info">
+                    <div class="col-2">
+                        <span class="fa fa-cog"></span>
+                    </div>
+                    <div class="col-10">
+                        <h4 class="mt-md-0 my-2">Carrier Guidance Services</h4>
+                        <p class="">Guidance services promote the holistic development of people and students by providing ongoing prevention and intervention services and offering personal cirrcular and carrier guidance.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-lg-4 col-md-6">
+                <div class="row inner-info">
+                    <div class="col-2">
+                        <span class="fa fa-copy"></span>
+                    </div>
+                    <div class="col-10">
+                        <h4 class="mt-md-0 my-2">Scholarship</h4>
+                        <p class="">Fees of school and colleges are very high now a days. This provide scholarship to womens and poor people to encourage them towards study and give them carrier opportunities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-lg-0 mb-5">
+                <div class="row inner-info">
+                    <div class="col-2">
+                        <span class="fa fa-eye"></span>
+                    </div>
+                    <div class="col-10">
+                        <h4 class="mt-md-0 my-2">Drama For Devlopment</h4>
+                        <p class="">A one year programme run in a community which uses drama as a platform to develop skills that are essential for career and life in adolescents who are in the age group of 13-18 years. Drama for Development uses the methodology of Awareness</p>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+</section>
+<!-- //features -->
+ <!-- stats -->
+    <section class="stats py-5" id="stats">
+        <div class="container py-lg-5 py-md-3">
+            <div class="row stat-grids">
+                <div class="col-lg-6 stats-left">
+                    <h3 class="heading mb-4 text-li">Years in the field</h3>
+                    <p class="mb-3">There are good opportunities to advance your carrier. Management is very supportive of your ideas and suggestions. The company offers good benefits,and also provide additional training to continue learning new skills.</p>
+                     </div>
+                <div class="col-lg-6 grid1 stats-right mt-lg-0 mt-4 pl-5">
+                    <div class="row">
+                        <div class="col-sm-4 col-6">
+                            <p class="text-li">Branches</p>
+                            <h4 class="text-wh">10</h4>
+                            <span class="fa fa-files-o mr-2"></span>
+                        </div>
+                        <div class="col-sm-4 col-6">
+                            <p>Working Staff</p>
+                            <h4>30</h4>
+                            <span class="fa fa-tasks mr-2"></span>
+                        </div>
+                        <div class="col-sm-4 col-6 mt-sm-0 mt-5">
+                            <p>Total Students</p>
+                            <h4>500</h4>
+                            <span class="fa fa-users mr-2"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- //stats -->
+    
+ <!-- Gallery -->
+    <section class="gallery py-5" id="gallery">
+        <div class="container py-md-5">
+            <div class="header text-center">
+                <h3 class="tittle mb-lg-5 mb-3">Our Gallery</h3>
+            </div>
+            <div class="row news-grids text-center gallery-wrap">
+                <div class="col-md-4 gal-img">
+                    <a href="#gal1"><img src="images/g1.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="#gal2"><img src="images/g2.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="#gal3"><img src="images/g3.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="#gal4"><img src="images/g4.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="#gal5"><img src="images/g5.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+                <div class="col-md-4 gal-img">
+                    <a href="#gal6"><img src="images/g6.jpg" alt="news image" class="img-fluid"></a>
+                </div>
+            </div>
+
+            <!-- popup-->
+            <div id="gal1" class="pop-overlay animate">
+                <div class="popup">
+                    <img src="images/g1.jpg" alt="Popup Image" class="img-fluid" />
+
+                    <a class="close" href="#gallery">&times;</a>
+                </div>
+            </div>
+            <!-- //popup -->
+
+            <!-- popup-->
+            <div id="gal2" class="pop-overlay animate">
+                <div class="popup">
+                    <img src="images/g2.jpg" alt="Popup Image" class="img-fluid" />
+
+                    <a class="close" href="#gallery">&times;</a>
+                </div>
+            </div>
+            <!-- //popup -->
+            <!-- popup-->
+            <div id="gal3" class="pop-overlay animate">
+                <div class="popup">
+                    <img src="images/g3.jpg" alt="Popup Image" class="img-fluid" />
+
+                    <a class="close" href="#gallery">&times;</a>
+                </div>
+            </div>
+            <!-- //popup3 -->
+            <!-- popup-->
+            <div id="gal4" class="pop-overlay animate">
+                <div class="popup">
+                    <img src="images/g4.jpg" alt="Popup Image" class="img-fluid" />
+
+                    <a class="close" href="#gallery">&times;</a>
+                </div>
+            </div>
+            <!-- //popup -->
+<!-- popup-->
+            <div id="gal5" class="pop-overlay animate">
+                <div class="popup">
+                    <img src="images/g5.jpg" alt="Popup Image" class="img-fluid" />
+
+                    <a class="close" href="#gallery">&times;</a>
+                </div>
+            </div>
+            <!-- //popup -->
+            <!-- popup-->
+            <div id="gal6" class="pop-overlay animate">
+                <div class="popup">
+                    <img src="images/g6.jpg" alt="Popup Image" class="img-fluid" />
+
+                    <a class="close" href="#gallery">&times;</a>
+                </div>
+            </div>
+            <!-- //popup -->
+
+        </div>
+    </section>
+    <!--// gallery -->
+<!-- testimonials -->
+<section class="testi py-5" id="testimonials">
+    <div class="container pb-xl-5 py-lg-3">
+        <h3 class="tittle two text-center heading mb-5">What our People say</h3>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="row testi-cgrid border-right-grid">
+                    <div class="col-sm-4 testi-icon mb-sm-0 mb-3">
+                        <img src="images/te1.jpg" alt="" class="img-fluid"/>
+                    </div>
+                    <div class="col-sm-8">
+                        <p class="mx-auto"><span class="fa fa-quote-left"></span> This organisation has a good plans and policies and all are very easy to understand.</p>
+                        <h6 class="b-w3ltxt mt-3">Smith </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-sm-5 mt-4">
+                <div class="row testi-cgrid border-left-grid">
+                    <div class="col-sm-4 testi-icon mb-sm-0 mb-3">
+                        <img src="images/te2.jpg" alt="" class="img-fluid"/>
+                    </div>
+                    <div class="col-sm-8">
+                        <p class="mx-auto"><span class="fa fa-quote-left"></span> Amazing culture, great benefits, great pay, good opportunity to learn and awesome people and management..</p>
+                        <h6 class="b-w3ltxt mt-3">Warner </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- testimonials -->
+<!-- team -->
+<section class="team py-5" id="team">
+    <div class="container py-xl-5 py-lg-3">
+        <div class="heading-grid text-center">
+            <h3 class="tittle text-center heading mb-5">Our Staff</h3>
+        </div>
+        <div class="row inner-sec-w3layouts-w3pvt-lauinfo">
+            <div class="col-md-4 col-sm-6">
+                <div class="team-grids text-center">
+                    <img src="images/team1.jpg" class="img-fluid" alt="">
+                    <div class="social-icons-section">
+                        <a class="fac" href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a class="twitter" href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="google" href="#">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="team-info">
+                        <div class="caption">
+                            <h4>John Doe</h4>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-sm-0 mt-5">
+                <div class="team-grids text-center">
+                    <img src="images/team2.jpg" class="img-fluid" alt="">
+                    <div class="social-icons-section">
+                        <a class="fac" href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a class="twitter" href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="google" href="#">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="team-info">
+                        <div class="caption">
+                            <h4>Elizabeth</h4>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 mt-md-0 mt-5">
+                <div class="team-grids text-center">
+                    <img src="images/team3.jpg" class="img-fluid" alt="">
+                    <div class="social-icons-section">
+                        <a class="fac" href="#">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a class="twitter" href="#">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a class="google" href="#">
+                            <i class="fa fa-google-plus"></i>
+                        </a>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="team-info">
+                        <div class="caption">
+                            <h4>Martin ker </h4>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- team -->
+
+   
+   <section class="section-middle py-5" id="bottom">
+    <div class="container py-lg-5">
+        <div class="row about-main">
+            <div class="col-lg-6 about-text-grid1 text-left">
+                <div class="title-desc">
+                    <h4><span></span>Get started</h4>
+                    <h3 class="main-title-w3pvt text-capitalize my-4"> Join With Us. We will make the best Education together!</h3>
+                </div>
+                
+            </div>
+            <div class="col-lg-6 about-right mt-lg-0 mt-4">
+                <p class="">We are committed to helping every learner develop as a whole person, fulfil his or her potential and help shape a shared future built on the well-being of individuals, communities and the planet. </p>
+                <p class="mt-4">In the face of an increasingly volatile, uncertain, complex and ambiguous world, education can make the difference as to whether people embrace the challenges they are confronted with or whether they are defeated by them. And in an era characterised by a new explosion of scientific knowledge and a growing array of complex societal problems, it is
+                appropriate that curricula should continue to evolve, perhaps in radical ways..</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contact -->
+<section class="contact py-5" id="contact">
+    <div class="container py-sm-4">
+        <h3 class="heading mb-4">Contact Us</h3>
+        <div class="row contact-top">
+            <div class="col-lg col-md-6 contact-grid-wthree">
+                <div class="contact_grid_right">
+                <form action="#" method="post">
+                    <div class="contact_left_grid">
+                        <div class="con-left">
+                            <div class="form-group">
+                                <input class="form-control" type="text" name="Name" placeholder="Name" required="">
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" name="Email" placeholder="Email" required="">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="textarea" placeholder="Message" required=""></textarea>
+                            </div>
+                            <div class="sub-honey mx-auto mt-3">
+                                <button class="form-control btn" type="submit">Submit</button> 
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 contact-grid-wthree foot-top mt-md-0 mt-5">
+                <h3 class="contact-title mb-sm-4 mb-2">Address information</h3>
+                <div class="contact-info">
+                    
+                    <div class="contact-style-w3ls">
+                        <p><span class="fa fa-map-marker"></span><strong>Location :</strong> Avj Heights, Noida.</p>
+                    </div>
+                    <div class="contact-style-w3ls my-2">
+                        <p><span class="fa fa-envelope-open"></span><strong>Email :</strong> <a href="mailto:example@mail.com">shivangiverma490@gmail.com</a></p>
+                    </div>
+                    <div class="contact-style-w3ls">
+                        <p><span class="fa fa-phone"></span><strong>Phone :</strong> +91-9456427038</p>
+                        <p><span class="fa fa-mobile"></span><strong>Mobile :</strong> 54217892</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //contact -->
+
+    <!-- footer -->
+    <footer class="footer-content">
+        <div class="layer footer-1">
+            <div class="container-fluid">
+                <div class="row footer-top-inner-w3ls">
+                    <div class="col-lg-4 col-md-6 footer-top mt-md-0 mt-sm-5">
+                        <h2>
+                            <a href="index.html">Informing</a>
+                        </h2>
+                        <p class="my-3">There are good opportunities to advance your carrier. Management is very supportive of your ideas and suggestions. </p>
+                        <p>
+                            The company offers good benefits,and also provide additional training to continue learning new skills.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mt-md-0 mt-5">
+                        <div class="footer-w3pvt">
+                            <h3 class="mb-3 w3pvt_title">Office Hours</h3>
+                            <hr>
+                            <ul class="list-info-w3pvt last-w3ls-contact mt-lg-4">
+                                <li>
+                                    <p> Monday - Friday 9.00 am - 8.00 pm</p>
+
+                                </li>
+                                <li class="my-2">
+                                    <p>Saturday 9.00 am - 5.00 pm</p>
+
+                                </li>
+                                <li class="my-2">
+                                    <p>Sunday 10.00 am - 2.00 pm</p>
+
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-lg-0 mt-5">
+                        <div class="footer-w3pvt">
+                            <h3 class="mb-3 w3pvt_title">Newsletter</h3>
+                            <hr>
+                            
+                        <div class="footer-text">
+                            <p>By subscribing to our mailing list you will always get latest news and updates from us.</p>
+                            <form action="#" method="post">
+                                <input type="email" name="Email" placeholder="Enter your email..." required="">
+                                <button class="btn1 btn"><span class="fa fa-paper-plane-o" aria-hidden="true"></span></button>
+                                <div class="clearfix"> </div>
+                            </form>
+                        </div>
+                    </div>
+                           
+                           
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="w3ls-footer text-center mt-4">
+                    <ul class="list-unstyled w3ls-icons">
+                        <li>
+                            <a href="https://www.facebook.com/?stype=lo&jlou=Afd8IzVrJysjQjF3toZgg6HwQ7RTmEq3ctD20BFJUodIBe8sqLfe6lHnM1GW6yJzl4UzFs9lAciq8w5RnOnItw7W4GFXAZhqXQs115bV0p68bw&smuh=20696&lh=Ac_PRrId4IzmWBal">
+                                <span class="fa fa-facebook icon_facebook"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/">
+                                <span class="fa fa-twitter"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://dribbble.com/">
+                              
+                                <span class="fa fa-dribbble"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://vk.com/facebooklogin">
+                                <span class="fa fa-vk"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="move-top text-right"><a href="#home" class="move-top"> <span class="fa fa-angle-up  mb-3" aria-hidden="true"></span></a></div>
+            </div>
+            <!-- //footer bottom -->
+        </div>
+    </footer>
+    <!-- //footer -->
+
+
+</body>
+
+</html>
